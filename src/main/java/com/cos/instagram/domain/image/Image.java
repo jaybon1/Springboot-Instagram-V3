@@ -43,13 +43,15 @@ public class Image {
 	private User user; // 타입은 User오브젝트의 PK의 타입
 	
 	// Image를 select하면 여러개의 Tag가 딸려옴.
-	@OneToMany(mappedBy = "image", fetch = FetchType.LAZY) //연관관계 주인의 변수명을 적는다.
+	@OneToMany(mappedBy = "image", fetch = FetchType.EAGER) //연관관계 주인의 변수명을 적는다.
 	@JsonIgnoreProperties({"image"}) //Jackson한테 내리는 명령
 	private List<Tag> tags;
 	
 	@CreationTimestamp
 	private Timestamp createDate;
 }
+
+
 
 
 
