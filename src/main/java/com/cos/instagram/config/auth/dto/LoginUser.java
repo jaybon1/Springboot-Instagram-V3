@@ -2,6 +2,9 @@ package com.cos.instagram.config.auth.dto;
 
 import com.cos.instagram.domain.user.User;
 
+import lombok.Data;
+
+@Data
 public class LoginUser {
 
 	private int id;
