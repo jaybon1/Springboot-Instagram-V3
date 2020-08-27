@@ -8,6 +8,9 @@ server:
       force: true
     
 spring:
+
+  mustache:    expose-session-attributes: true # 스프링 머스태치에서 세션의 값을 가져올 때 사용
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/insta?serverTimezone=Asia/Seoul&useSSL=false&allowPublicKeyRetrieval=true
@@ -43,4 +46,4 @@ cos:
   secret: 겟인데어
 
 file:
-  path: C:/src/jwtoauthwork/instagram/src/main/resources/upload/
+  path: C:/src/springwork/instaJpa/src/main/resources/upload/

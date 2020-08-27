@@ -27,4 +27,9 @@ public class LoginUser {
 		this.providerId = user.getProviderId();
 	}
 	
+	public User getUser() {
+		return User.builder()
+				.id(id)
+				.build();
+	}
 }
