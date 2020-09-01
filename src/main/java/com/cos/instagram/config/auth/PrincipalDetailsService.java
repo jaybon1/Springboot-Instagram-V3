@@ -29,7 +29,7 @@ public class PrincipalDetailsService implements UserDetailsService{
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		log.info("loadUserByUsername : username : "+username);
 		User userEntity = 
-				userRepository.findByUsername(username).get(); // 널처리 해야됨
+				userRepository.findByUsername(username).get();
 		
 		if (userEntity != null) {
 			System.out.println("유저있음");
