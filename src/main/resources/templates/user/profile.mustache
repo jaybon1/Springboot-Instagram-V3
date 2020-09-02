@@ -39,9 +39,9 @@
 				<li class="profile__stat"><span class="profile__stat-number">{{profileDto.imageCount}}</span>
 					posts</li>
 				<li class="profile__stat"><span class="profile__stat-number">{{profileDto.followerCount}}</span>
-					followers</li>
+					<a href="/follow/followerList/{{profileDto.user.id}}"> followers</a></li>
 				<li class="profile__stat"><span class="profile__stat-number">{{profileDto.followingCount}}</span>
-					following</li>
+					<a href="/follow/followingList/{{profileDto.user.id}}">following</a></li>
 			</ul>
 			<p class="profile__bio">
 				<span class="profile__fullname">{{profileDto.user.name}}</span>
